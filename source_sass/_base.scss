@@ -2,6 +2,75 @@
 
 body{
 	@include breakpoint(medium down){
-		background: red !important;
+		//background: red !important;
 	}
+}
+
+//--------------------------------------------------
+.step1{
+    background-color:$step1;
+      
+}
+
+.step2{
+    background-color:$step2;  
+    
+}
+
+.step3{
+    background-color:$step3;
+}
+
+.step4{
+    background-color:$step4;
+}
+
+
+h2 {
+    padding-top: 76px;
+    height: 200px;
+    color:white;
+    font-family: $font1;
+    font-weight:200;
+}
+
+
+//step1-------------------------------------------
+.step1_content{
+  background-color: #9797D2;
+  color:white;
+}
+
+.video_intro{
+    font-family: fantasy;
+    font-size:20px;
+    margin-top:200px;
+}
+
+.video_title{
+//    postion:absolute;
+//    top:50%;
+//    transition: transform(0%,50%);
+}
+
+
+//--footer--------------------------------------
+#footer{
+    font-size: 55px;
+    text-align: center;
+    
+    background-color: ivory;
+    #desinger{
+        font-family: "Maven Pro",sans-serif;
+        font-size: 12px;
+        color: #6C1835;
+        a{
+            text-decoration:underline;
+        }
+    }
+    a{
+        color: #6C1835;
+            
+        }
+    
 }

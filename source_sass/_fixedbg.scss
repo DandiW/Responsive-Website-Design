@@ -1,0 +1,46 @@
+// <!----------------fixed photo----------------->
+
+#background{
+
+
+    background: 
+    linear-gradient(
+      rgba(0.1, 0, 0, 0.2),
+      rgba(0.0, 0, 0, 0.2)
+    ),
+    url("https://dandiw.squarespace.com/s/design1.jpeg");
+      background-size: cover;
+      height: 100vh;
+      background-attachment: fixed;
+}
+  
+   
+    
+            #bg_title{
+                  position:absolute;
+                  top: 50%;
+                  left:50%;
+                  transform: translate(-50%, -50%);
+                  text-transform: uppercase;
+                  position:relative;
+                  font-family: $step;
+                  font-weight:50; 
+                  text-align: center;
+                  color: white;
+                   width: 100%;
+                   margin:5rem;
+                   float: right;
+                   font-size: 3rem;
+                   margin:10px;
+//                   #bg_p{  
+//                       text-transform: capitalize;
+//                        font-weight: 10;
+//                        font-size: 3rem;
+//                        font-family: $font-secondary;
+//                        margin:60px;
+//
+//
+//                       }
+              
+           }
+        

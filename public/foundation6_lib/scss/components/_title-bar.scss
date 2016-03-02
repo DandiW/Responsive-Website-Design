@@ -8,7 +8,7 @@
 
 /// Background color of a title bar.
 /// @type Color
-$titlebar-background: $black !default;
+$titlebar-background: $white !default;
 
 /// Color of text inside a title bar.
 /// @type Color
@@ -16,7 +16,7 @@ $titlebar-color: $white !default;
 
 /// Padding inside a title bar.
 /// @type Length
-$titlebar-padding: 0.5rem !default;
+$titlebar-padding: 0.0rem !default;
 
 /// Font weight of text inside a title bar.
 /// @type Weight

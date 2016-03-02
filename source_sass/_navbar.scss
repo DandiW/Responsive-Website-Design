@@ -1,90 +1,25 @@
-//Reference: http://codepen.io/Fraser/pen/mJaGGL
+.title-bar {
+  margin-bottom: 40px;
+}
 
-
-.header {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	background: #6C1835;
-	z-index: 100;
-	height: 170px;
-    
-    .af-inner {
-	width: 90%;
-	max-width: 69em;
-	margin: 0 auto;
-	padding: 0 2.0em;
-    .active-nav{
-        color:$step2;
-    }
-	
-	-webkit-transition: height 0.3s;
-	-moz-transition: height 0.3s;
-	transition: height 0.3s;
+.main-section {
+  
+  //padding: 20px;
+}
+nav, ul {
+  color:white;
+}
+.top-bar {
+  background: #6C1835;
+}
+.left-off-canvas-menu {
+  background: #6C1835;
 }
 
 
 
-.header h1,
-.header nav {
-	display: inline-block;
-	position: relative;
-    
-}
-}
-//------------------------------------------------
-
-.header {
-
-h1 {
-	text-transform: uppercase;
-	color: balck;
-	letter-spacing: 4px;
-	font-size: 5em;
-    margin: 0;
-	float: left;
-    //font-family: $font-primary;
-    line-height: 230px;
-    -webkit-transition: all 0.1s;
-	-moz-transition: all 0.1s;
-	transition: all 0.1s;
+.color{
+    background-color: blue;
 }
 
-    nav {
-    a {
-	color: darkgrey;
-	font-weight: 700;
-	margin: 0 0 0 20px;
-	font-size: 2em;
-    line-height: 230px;
-    -webkit-transition: all 0.1s;
-	-moz-transition: all 0.1s;
-	transition: all 0.1s;
-        
-}
 
-    a:hover {
-	color: $step1;
-}
-    float: right;
-}
-
-}
-
-//-----------------------------------
-
-
-
-
-.header.header-shrink {
-    height: 80px;
-    nav a {
-	line-height: 80px;
-}
-     h1 {
-	font-size: 2em;
-    line-height: 80px;
-}
-
-}

@@ -57,7 +57,7 @@
      * @option
      * @example 1
      */
-    marginTop: 1,
+    marginTop: 2,
     /**
      * Margin, in `em`'s to apply to the bottom of the element when it becomes sticky.
      * @option

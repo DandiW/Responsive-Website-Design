@@ -9,6 +9,21 @@
   <link rel="stylesheet" href="./css/styles.css">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Indie+Flower|Poiret+One|Inconsolata|Josefin+Sans|Shadows+Into+Light|Amatic+SC|Chewy|Gloria+Hallelujah|Coming+Soon|Satisfy|Covered+By+Your+Grace|Roboto+Mono' rel='stylesheet' type='text/css'>
+    
+<!-- Important Owl stylesheet------------------ -->
+<link rel="stylesheet" href="./owl-carousel/owl.theme.css">
+ 
+<!-- Default Theme -->
+<link rel="stylesheet" href="./owl-carousel/owl.carousel.css">
+<link rel="stylesheet" href="./owl-carousel/owl.transitions.css">
+ 
+<!--  jQuery 1.7+  -->
+<!--<script src="./owl-carousel/jquery-1.9.1.min.js"></script>-->
+ 
+<!-- Include js plugin -->
+
+
+    
 </head>
 
 <body>
@@ -16,21 +31,65 @@
     
     
 
-<!------>
+<div class="off-canvas-wrapper">
+  <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+
+    <!-- off-canvas title bar for 'small' screen -->
+    <div class="title-bar" data-responsive-toggle="widemenu" data-hide-for="medium">
+      <div class="title-bar-left">
+        <button class="menu-icon" type="button" data-open="offCanvasLeft"></button>
+        <span class="title-bar-title">UI/UX GUIDE</span>
+      </div>
+
+    </div>
+
+    <!-- off-canvas left menu -->
+    <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
+      <ul class="vertical dropdown menu" data-dropdown-menu>
+        <li><a href="left_item_1">Step 1</a></li>
+        <li><a href="left_item_2">Step 2</a></li>
+        <li><a href="left_item_3">Step 3</a></li>
+        <li><a href="left_item_3">Step 4</a></li>
+      </ul>
+    </div>
   
 
-    <ul class="header top-bar menu">
-      <div class="af-inner">
-        <h1>UI/UX</h1>
-        <nav class="menu horizontal">
-          <li><a href="#nav1" class="active-nav" id = "l1">Step1</a></li>
-          <li><a href="#nav2" id = "l2">Step2</a></li>
-          <li><a href="#nav3" id ="l3">step3</a></li>
-          <li><a href="#nav4" id ="l3">step4</a></li>
+
+    <!-- "wider" top-bar menu for 'medium' and up -->
+    <div data-sticky-container>
+    <div id="widemenu" class="title-bar" data-sticky data-options="marginTop:0;  min-height: 40px;" style="width:100%">
+    <div class="color">
+      <div class="title-bar-left">
+        <ul class ="menu">
+          <li class ="menu-text"> UI/UX </li>
           
-        </nav>
+        </ul>
       </div>
-    </ul>
+      <div class="title-bar-right">
+        
+            <ul class="menu" data-magellan>
+          <li><a href="#nav1">Step 1</a></li>
+          <li><a href="#nav2">Step 2</a></li>
+          <li><a href="#nav3">Srep 3</a></li>
+          <li><a href="#nav4">Srep 4</a></li>
+        </ul>
+        
+      </div>
+        </div>    
+    </div>
+    </div>
+
+    <!-- original content goes in this container -->
+    <div class="off-canvas-content" data-off-canvas-content>
+      <div class="row column">
+     
+
+  <!-- close wrapper, no more content after this -->
+  </div>
+</div>
+ 
+
+
   
 <!--  fixed background-->
     <div id= "background" >
@@ -54,8 +113,8 @@
 <!--    <img src="./src/design1.jpeg">-->
  
 <!-------------step1----------------->
-<div class="column text-center step1" id ="nav1">
-<h2>Step 1</h2>
+<div class="column text-center step1" id ="nav1" data-magellan-target="nav1">
+<h2>Step 1: Intro to Design</h2>
 </div>
 
 <!-------------Video----------------->
@@ -74,8 +133,8 @@
     
     
 <!-------------step2----------------->
-<div class="column text-center step2" id ="nav2">
-<h2>Step 2</h2>
+<div class="column text-center step2" id ="nav2" data-magellan-target="nav2">
+<h2>Step 2: Study Guide and Turorial</h2>
 </div>
 <!--  Two complete  -->
 <div class="column text-center guide">
@@ -106,8 +165,8 @@
 
         
 <!-------------step3----------------->
-<div class="column text-center step3" id ="nav3">
-<h2>Step 3</h2>
+<div class="column text-center step3" id ="nav3" data-magellan-target="nav3">
+<h2>Step 3: Design Components</h2>
 </div>
 <!--  4 resources  -->
     
@@ -124,9 +183,9 @@
          <!--      modal1-->
           
     <div class="reveal" id="exampleModal1" data-reveal>
-            <h1>Awesome. I Have It.</h1>
-            <p class="lead">Your couch. It is mine.</p>
-            <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+            <h1>Color</h1>
+            <p class="lead">Color is a powerful form of communication. We are so attracted to color and so repelled by it that even if the coolest design were presented to us, if we didn't like the color, we wouldn't like it at all.</p>
+            
             <button class="close-button" data-close aria-label="Close modal" type="button">
             <span aria-hidden="true">&times;</span>
             </button>
@@ -136,16 +195,15 @@
     
 <!--  photo 2  -->
     <div class="column">
-     <a data-open="exampleModal1"><img src="./src/patterns.png" class="thumbnail" alt=""></a>
+     <a data-open="exampleModal2"><img src="./src/patterns.png" class="thumbnail" alt=""></a>
     <div class= "column-12 text-center">Patterns</div> 
   
       
             <!--      modal2-->
           
-    <div class="reveal" id="exampleModal1" data-reveal>
-            <h1>Awesome. I Have It.</h1>
-            <p class="lead">Your couch. It is mine.</p>
-            <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+    <div class="reveal" id="exampleModal2" data-reveal>
+            <h1>Patterns</h1>
+            <p class="lead">Explore at colourlovers.com/patterns</p>
             <button class="close-button" data-close aria-label="Close modal" type="button">
             <span aria-hidden="true">&times;</span>
             </button>
@@ -155,16 +213,16 @@
     
 <!--    photo3    -->
     <div class="column">
-     <a data-open="exampleModal1"><img src="./src/Typho.png" class="thumbnail" alt=""></a>
+     <a data-open="exampleModal3"><img src="./src/Typho.png" class="thumbnail" alt=""></a>
     <div class= "column-12 text-center">Typography</div> 
   
       
         <!--      modal3-->
           
-    <div class="reveal" id="exampleModal1" data-reveal>
-            <h1>Awesome. I Have It.</h1>
-            <p class="lead">Your couch. It is mine.</p>
-            <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+    <div class="reveal" id="exampleModal3" data-reveal>
+            <h1>Typography</h1>
+            <p class="lead">ypography can simply be described as the art of type. It's everything you can think of – like fonts, sizes, and readability.</p>
+            
             <button class="close-button" data-close aria-label="Close modal" type="button">
             <span aria-hidden="true">&times;</span>
             </button>
@@ -173,16 +231,16 @@
 </div>
 <!-- photo 4-->
     <div class="column">
-     <a data-open="exampleModal1"><img src="./src/Icon.png" class="thumbnail" alt=""></a>
+     <a data-open="exampleModal4"><img src="./src/Icon.png" class="thumbnail" alt=""></a>
     <div class= "column-12 text-center">Icrongraphy</div> 
   
       
         <!--      modal4-->
           
-    <div class="reveal" id="exampleModal1" data-reveal>
-            <h1>Awesome. I Have It.</h1>
-            <p class="lead">Your couch. It is mine.</p>
-            <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+    <div class="reveal" id="exampleModal4" data-reveal>
+            <h1>Icrongraphy</h1>
+            <p class="lead">Explore at https://design.google.com/icons/</p>
+           
             <button class="close-button" data-close aria-label="Close modal" type="button">
             <span aria-hidden="true">&times;</span>
             </button>
@@ -194,42 +252,32 @@
 </div>
             
 <!-------------step4------------------------------------------->
-<div class="column text-center step4" id ="nav4">
-<h2>Step 4</h2>
+<div class="column text-center step4" id ="nav4" data-magellan-target="nav1">
+<h2>Step 4: Tools and Inspiration</h2>
 </div>
 <!--    -->
 
 
     
-<!--    Orbit-->
-<div class="column orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
-  <ul class="orbit-container">
-    <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
-    <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
-    <li class="is-active orbit-slide">
-      <img class="orbit-image" src="./src/design2.jpeg"orb alt="Space">
-      <figcaption class="orbit-caption">Space, the final frontier.</figcaption>
-    </li>
-    <li class="orbit-slide">
-      <img class="orbit-image" src="./src/design3.jpeg" alt="Space">
-      <figcaption class="orbit-caption">Lets Rocket!</figcaption>
-    </li>
-    <li class="orbit-slide">
-      <img class="orbit-image" src="./src/design3.jpeg" alt="Space">
-      <figcaption class="orbit-caption">Encapsulating</figcaption>
-    </li>
-    <li class="orbit-slide">
-      <img class="orbit-image" src="./src/design4.jpeg" alt="Space">
-      <figcaption class="orbit-caption">Outta This World</figcaption>
-    </li>
-  </ul>
-  <nav class="orbit-bullets">
-    <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
-    <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
-    <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
-    <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
-  </nav>
+<!--    OWL CARSOUL-->
+
+
+      
+<div class = "column" id="owl-demo">
+   <div class="item"><img src="./src/dribu.gif" alt="dribu"></div>
+   <div class="item"><img src="./src/behanceIcon.png" alt="bahance"></div>
+  <div class="item"><img src="./src/sketch-software2.png" alt="sketch"></div>
+  <div class="item"><img src="./src/photoshop.png" alt="photoshop"></div>
+ 
+  <div class="item"><img src="./src/adobeillustrator.png" alt="illustrator"></div>
+  <div class="item"><img src="./src/invision-round-icon.png" alt="invision"></div>
+  <div class="item"><img src="/src/mybalsamiq-lg.png" alt="balsamiq"></div>
+  <div class="item"><img src="/src/omnigraffle-mac.png" alt="omnigraffle"></div>
+  <div class="item"><img src="/src/axurelogo.png" alt="axure"></div>
+  
+ 
 </div>
+      
     
       <!-----------footer------------------------------------------>
       <div id ="footer">
@@ -255,12 +303,16 @@
           </div>
     
       </div>
+<!--      close tag for side bar---------------------------->
+       </div>
+    </div>
     
 
 
   <!-- Scripts -->
   
   <script src="./lib/jquery-2.1.3.min/index.js"></script>
+  <script src="./owl-carousel/owl.carousel.min.js"></script>
   <script src="./foundation6_lib/js/foundation.min.js"></script>
   <script src="./js/script.js"></script>
   <script>

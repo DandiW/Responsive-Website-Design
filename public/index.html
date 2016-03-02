@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>MP2 Starter</title>
+  <title>UI/UX Guide</title>
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="./css/styles.css">
@@ -11,6 +11,7 @@
     <link href='https://fonts.googleapis.com/css?family=Indie+Flower|Poiret+One|Inconsolata|Josefin+Sans|Shadows+Into+Light|Amatic+SC|Chewy|Gloria+Hallelujah|Coming+Soon|Satisfy|Covered+By+Your+Grace|Roboto+Mono'
     rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Nunito:700,400' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="https://dandiw.squarespace.com/s/favicon.ico" type="image/x-icon"/>
     
 <!-- Important Owl stylesheet------------------ -->
 <link rel="stylesheet" href="./owl-carousel/owl.theme.css">
@@ -71,8 +72,8 @@
       </div>
       <div class="title-bar-right">
         
-            <ul class="menu" >
-          <li><a href="#nav1">Step 1</a></li>
+        <ul class="menu" data-magellan>
+          <li><a href="#nav1" >Step 1</a></li>
           <li><a href="#nav2">Step 2</a></li>
           <li><a href="#nav3">Step 3</a></li>
           <li><a href="#nav4">Step 4</a></li>
@@ -141,8 +142,8 @@
     </div>
  
 <!-------------step1----------------->
-<section id= "nav1">
-<div class="column text-center step1" data-magellan-target="nav1">
+<section id= "nav1" data-magellan-target="nav1">
+<div class="column text-center step1" >
 <h2>Step 1: Intro to Design</h2>
 </div>
 
@@ -162,8 +163,8 @@
 </section>      
     
 <!-------------step2----------------->
-<section>    
-<div class="column text-center step2" id ="nav2" data-magellan-target="nav2">
+<section id ="nav2" data-magellan-target="nav2">    
+<div class="column text-center step2" >
 <h2>Step 2: Study Guide and Turorial</h2>
 </div>
 <!--  Two complete  -->
@@ -195,8 +196,8 @@
 </section>
         
 <!-------------step3----------------->
-<section>    
-<div class="column text-center step3" id ="nav3" data-magellan-target="nav3">
+<section id ="nav3" data-magellan-target="nav3">    
+<div class="column text-center step3" >
 <h2>Step 3: Design Components</h2>
 </div>
 <!--  4 resources  -->
@@ -284,8 +285,8 @@
 </section>    
             
 <!-------------step4------------------------------------------->
-<section>    
-<div class="column text-center step4" id ="nav4" data-magellan-target="nav1">
+<section id ="nav4" data-magellan-target="nav4">    
+<div class="column text-center step4" >
 <h2>Step 4: Tools and Inspiration</h2>
 </div>
 <!--    -->
@@ -348,7 +349,7 @@
   <script src="./owl-carousel/owl.carousel.min.js"></script>
   <script src="./foundation6_lib/js/foundation.min.js"></script>
   <script src="./js/script.js"></script>
-  <script src="./lib/scrollIt.js" type="text/javascript"></script>
+  
   <script>
     $(document).foundation();
   </script>

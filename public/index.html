@@ -58,7 +58,7 @@
     <!-- "wider" top-bar menu for 'medium' and up -->
     <div data-sticky-container>
     <div id="widemenu" class="title-bar" data-sticky data-options="marginTop:0;  min-height: 40px;" style="width:100%">
-    <div class="color">
+    
       <div class="title-bar-left">
         <ul class ="menu">
           <li class ="menu-text"> UI/UX </li>
@@ -75,14 +75,37 @@
         </ul>
         
       </div>
-        </div>    
+          
     </div>
     </div>
 
-    <!-- original content goes in this container -->
+    
+     
+<!--      New trying here----------->
+      
+      <!------------header----------->
+ 
+<!--
+
+
+    <div class="header" >
+      <div class="af-inner">
+        <h1>UI/UX GUIDE</h1>
+        <nav >
+        <ul class="vertical medium-horizontal menu"> 
+         <li> <a href="#nav1" class="active-nav" id = "l1">Step 1</a></li>
+         <li> <a href="#nav2" id = "l2">Step 2</a></li>
+         <li><a href="#nav3" id ="l3">Step 3</a></li>
+         <li> <a href="#nav4" id ="l4">Step 4</a></li>
+        </ul>  
+        </nav>
+      </div>
+    
+-->
+
+<!--      original content goes in this container -->
     <div class="off-canvas-content" data-off-canvas-content>
       <div class="row column">
-     
 
   <!-- close wrapper, no more content after this -->
   </div>
@@ -113,7 +136,8 @@
 <!--    <img src="./src/design1.jpeg">-->
  
 <!-------------step1----------------->
-<div class="column text-center step1" id ="nav1" data-magellan-target="nav1">
+<section id="nav1">
+<div class="column text-center step1" data-magellan-target="nav1">
 <h2>Step 1: Intro to Design</h2>
 </div>
 
@@ -130,9 +154,10 @@
     </div>
 </div>
 
-    
+</section>      
     
 <!-------------step2----------------->
+<section id="nav2">    
 <div class="column text-center step2" id ="nav2" data-magellan-target="nav2">
 <h2>Step 2: Study Guide and Turorial</h2>
 </div>
@@ -162,9 +187,10 @@
 </div>
 
     
-
+</section>
         
 <!-------------step3----------------->
+<section id="nav3">    
 <div class="column text-center step3" id ="nav3" data-magellan-target="nav3">
 <h2>Step 3: Design Components</h2>
 </div>
@@ -250,8 +276,10 @@
       
 
 </div>
+</section>    
             
 <!-------------step4------------------------------------------->
+<section id="nav4">    
 <div class="column text-center step4" id ="nav4" data-magellan-target="nav1">
 <h2>Step 4: Tools and Inspiration</h2>
 </div>
@@ -277,6 +305,7 @@
   
  
 </div>
+</section>    
       
     
       <!-----------footer------------------------------------------>
@@ -315,6 +344,7 @@
   <script src="./owl-carousel/owl.carousel.min.js"></script>
   <script src="./foundation6_lib/js/foundation.min.js"></script>
   <script src="./js/script.js"></script>
+  <script src="./lib/scrollIt.js" type="text/javascript"></script>
   <script>
     $(document).foundation();
   </script>

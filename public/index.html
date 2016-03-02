@@ -37,13 +37,15 @@
   <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 
     <!-- off-canvas title bar for 'small' screen -->
-    <div class="title-bar" data-responsive-toggle="widemenu" data-hide-for="medium">
+    <div data-sticky-container>
+    <div class="title-bar sticky" data-sticky  data-sticky-on="small" data-options="marginTop:0;  min-height: 40px;" style="width:100%"  data-responsive-toggle="widemenu" data-hide-for="medium" >
       <div class="title-bar-left">
         <button class="menu-icon" type="button" data-open="offCanvasLeft"></button>
         <span class="title-bar-title">UI/UX Guide</span>
       </div>
 
     </div>
+        </div>
 
     <!-- off-canvas left menu -->
     <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
@@ -139,7 +141,7 @@
     </div>
  
 <!-------------step1----------------->
-<section id="nav1">
+<section id= "nav1">
 <div class="column text-center step1" data-magellan-target="nav1">
 <h2>Step 1: Intro to Design</h2>
 </div>
@@ -160,7 +162,7 @@
 </section>      
     
 <!-------------step2----------------->
-<section id="nav2">    
+<section>    
 <div class="column text-center step2" id ="nav2" data-magellan-target="nav2">
 <h2>Step 2: Study Guide and Turorial</h2>
 </div>
@@ -193,7 +195,7 @@
 </section>
         
 <!-------------step3----------------->
-<section id="nav3">    
+<section>    
 <div class="column text-center step3" id ="nav3" data-magellan-target="nav3">
 <h2>Step 3: Design Components</h2>
 </div>
@@ -282,7 +284,7 @@
 </section>    
             
 <!-------------step4------------------------------------------->
-<section id="nav4">    
+<section>    
 <div class="column text-center step4" id ="nav4" data-magellan-target="nav1">
 <h2>Step 4: Tools and Inspiration</h2>
 </div>

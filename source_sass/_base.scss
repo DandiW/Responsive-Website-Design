@@ -34,6 +34,49 @@ h2 {
     font-weight:200;
 }
 
+//Navbar------------
+
+.title-bar{
+    background-color: #6C1835 !important;
+    font-family: $step !important;
+    font-size: 40px !important;
+    
+    .title-bar-right{
+    font-family: $font1 !important;
+    font-size: 20px;
+        
+}
+}
+
+body{
+    
+    background-color: ivory !important;
+}
+
+.sticky.is-anchored{
+    height: 100px !important;
+}
+.menu-text{
+    padding:1rem 2rem;
+    
+}
+
+
+.menu > li > a {
+    padding:2rem 1rem;
+}
+
+a {
+    color:white;
+    font-weight: bold;
+    
+}
+
+.off-canvas{
+    a{
+        background-color: #a9a9a9;
+    }
+}
 
 //step1-------------------------------------------
 .step1_content{
@@ -59,17 +102,17 @@ h2 {
     font-size: 55px;
     text-align: center;
     
-    background-color: ivory;
+    background-color: #F47128;
     #desinger{
         font-family: "Maven Pro",sans-serif;
         font-size: 12px;
-        color: #6C1835;
+        color: white;
         a{
             text-decoration:underline;
         }
     }
     a{
-        color: #6C1835;
+        color: white;
             
         }
     
